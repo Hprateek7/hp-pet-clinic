@@ -2,10 +2,11 @@ package hp.springprojs.hppetclinic.services.map;
 
 import hp.springprojs.hppetclinic.model.Vet;
 import hp.springprojs.hppetclinic.services.CrudService;
+import hp.springprojs.hppetclinic.services.VetService;
 
 import java.util.Set;
 
-public class VetServiceMap extends AbstractMapService<Vet,Long> implements CrudService<Vet,Long> {
+public class VetServiceMap extends AbstractMapService<Vet,Long> implements VetService {
     @Override
     public Set<Vet> findAll() {
         return super.findAll();

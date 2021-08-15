@@ -3,9 +3,11 @@ package hp.springprojs.hppetclinic.services.map;
 import hp.springprojs.hppetclinic.model.Owner;
 import hp.springprojs.hppetclinic.services.CrudService;
 import hp.springprojs.hppetclinic.services.OwnerService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner,Long> implements OwnerService {
     @Override
     public Set<Owner> findAll() {

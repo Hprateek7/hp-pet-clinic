@@ -1,13 +1,13 @@
 package hp.springprojs.hppetclinic.services.map;
 
 import hp.springprojs.hppetclinic.model.Speciality;
-import hp.springprojs.hppetclinic.services.SpecialitiesService;
+import hp.springprojs.hppetclinic.services.SpecialityService;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
 @Service
-public class SpecialitiesMapService extends AbstractMapService<Speciality, Long> implements SpecialitiesService {
+public class SpecialityMapService extends AbstractMapService<Speciality, Long> implements SpecialityService {
 
     @Override
     public Set<Speciality> findAll() {

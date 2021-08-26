@@ -1,7 +1,6 @@
 package hp.springprojs.hppetclinic.services.map;
 
 import hp.springprojs.hppetclinic.model.Pet;
-import hp.springprojs.hppetclinic.services.CrudService;
 import hp.springprojs.hppetclinic.services.PetService;
 import org.springframework.stereotype.Service;
 
@@ -14,13 +13,8 @@ public class PetServiceMap extends AbstractMapService<Pet,Long> implements PetSe
     }
 
     @Override
-    public void deleteById(Long id) {
-        super.deleteById(id);
-    }
-
-    @Override
-    public void delete(Pet object) {
-        super.delete(object);
+    public Pet findById(Long id) {
+        return super.findById(id);
     }
 
     @Override
@@ -29,7 +23,12 @@ public class PetServiceMap extends AbstractMapService<Pet,Long> implements PetSe
     }
 
     @Override
-    public Pet findById(Long id) {
-        return super.findById(id);
+    public void delete(Pet object) {
+        super.delete(object);
+    }
+
+    @Override
+    public void deleteById(Long id) {
+        super.deleteById(id);
     }
 }
